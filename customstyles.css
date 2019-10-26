@@ -1,10 +1,48 @@
-.fsbg{
-    background: url('background_temp.jpg'); 
-    background-size: cover;
-    background-attachment: fixed;
+@media (min-width: 1024px) {
+    .fsbg{
+        background: url('background_temp.jpg'); 
+        background-size: cover;
+        padding-bottom: 50%;
+        width: 100%;
+    }
+    .iam{
+            left: 100px;
+            position: absolute;
+            top:150px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+    .fsbg{
+        background: url('background_temp_phone.jpg');
+        background-size: cover;
+        padding-bottom: 200%;
+        width: 100%;
+    }
+    .iam{
+        left: 100px;
+        position: absolute;
+        top: 300px;
+    }
 }
 @media (min-width: 320px) and (max-width: 639px) {
     .fsbg{
         background: url('background_temp_phone.jpg');
+        background-size: cover;
+        padding-bottom: 200%;
+        width: 100%;
     }
+    .iam{
+        left: 100px;
+        position: absolute;
+        top: 300px;
+    }
+}
+.parralax{
+    background-attachment: fixed;
+}
+button{
+    margin: 4px;
+}
+.frost_container{
+    min-width: 140px;
 }
