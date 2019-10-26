@@ -1,0 +1,10 @@
+.fsbg{
+    background: url('background_temp.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+@media (min-width: 320px) and (max-width: 639px) {
+    .fsbg{
+        background: url('background_temp_phone.jpg');
+    }
+}
