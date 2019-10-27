@@ -1,188 +1,276 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Shivendra Saurav - Protfolio</title>
+        <title>Shivendra Saurav - Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://shivendrasaurav.github.io/Fluent-Design-For-Web/fluent.js"></script>
         <link href="https://shivendrasaurav.github.io/Fluent-Design-For-Web/fluent.css" type="text/css" rel="stylesheet">
+        <link href="https://shivendrasaurav.github.io/Fluent-Design-For-Web/Icons/css/icons.css" type="text/css" rel="stylesheet">
         <link href="customstyles.css" type="text/css" rel="stylesheet">
+    
+    <script>
+        
+        function openmod1(){
+                document.getElementById("mod1").style.display="Block";
+                document.getElementById("body").style.filter="saturate(125%) blur(10px)";
+            }
+            function closemod1(){
+                document.getElementById("mod1").style.display="None";
+                document.getElementById("body").style.filter="blur(0px)";
+            }
+            function showsidenav(){
+                if(screen.width < 640){
+                    document.getElementById("sidenav").style.display="Block";
+                    document.getElementById("content").style.filter="saturate(125%) blur(10px)";
+                }
+            }
+            function hidesiednav(){
+                document.getElementById("sidenav").style.display="None";
+                document.getElementById("content").style.filter="blur(0px)";
+            }
+            function opendialog1(){
+                document.getElementById("dialog1").style.display="Block";
+            }
+            function closedialog1(){
+                document.getElementById("dialog1").style.display="None";
+            }
+            $(function() {
+            $( ".dialogue_box" ).draggable();
+            });
+        
+    </script>
+
     </head>
+
     <body>
-        <div class="page_container fsbg parrallax">
-            <div class="iam">
-                <h1>I am,</h1>
-                <h3>Shivendra Saurav</h3>
-                <h5>UI/UX Developer</h5>
-            </div>
+        <div class="column large12 medium12 pivot_container primary_green" style="position: fixed; margin-top: -10px; width: 99%;">
+            <a class="pivot_button left" onclick="showsidenav();" style="padding: 0px; font-size: 38px;">SS</a>
+            <a href="#contact" style="font-size: 20px;" class="pivot_button right small0">Contact</a>
+            <a href="#portfolio" style="font-size: 20px;" class="pivot_button right small0">Portfolio</a>
+            <a href="#skills" style="font-size: 20px;" class="pivot_button right small0">What I Do</a>
+            <a href="#about" style="font-size: 20px;" class="pivot_button right small0">About Me</a>
+            <a href="#home" style="font-size: 20px;" class="pivot_button right small0">I am</a>
         </div>
-        <div id="about" class="page_container" style="padding: 16px;" >
-            <br><br><br><br>
-            <h2>About Me</h2>
-            <p style="font-size: 24px;">
-                I am currently pusruing B.Tech in CSE from REVA University. 
-                I have the ability to solve any programming or design problem 
-                based on the criteria provided. Maybe you want a music app, 
-                maybe you want a web page for your brand, or maybe you want 
-                to make Conway's Game Of Life, I can do all that and much more 
-            </p>
-            <br><br><br><br><br><br>
-        </div>
-        <div id="skills" class="page_container primary_white zi2">
-            <br><br>
-            <div style="padding: 16px;" class="column large6 medium6 small12">
-                <h2>What I Do</h2>
-                <p style="font-size: 24px;">
-                    I can perform a wide array of tasks ranging from designing
-                    and developing beutiful webpages just like this one or based on 
-                    given requirements. I also know different programming languages 
-                    which help me to participate in most of the projects I am part of. 
-                    I also possess fundamental knowledge of algorithms and mathematics 
-                    which helps me to solve almost any problem I face.
-                </p>
-            </div>
-            <div style="padding: 16px;" class="column large6 medium6 small12">
-                <h2>My Inventory Includes Of</h2>
-                <p style="text-align: left;">
-                    <button class="primary_blue " >
-                        UI/UX Development</span>
-                    </button>                    
-                    <button class="primary_blue " >
-                        Front End Web Development</span>
-                    </button>                    
-                    <button class="primary_blue " >
-                        Algorithms Development</span>
-                    </button>                    
-                    <button class="primary_blue " >
-                        Using Data Structures</span>
-                    </button>                    
-                    <button class="primary_blue " >
-                        Handling Arrays and Pointers</span>
-                    </button>                    
-                    <button class="primary_blue " >
-                        Writing Webpages In HTML/CSS</span>
-                    </button>
-                    <button class="primary_blue " >
-                        Developing JavaScript Components</span>
-                    </button>
-                    <button class="primary_blue " >
-                        Writing C/C++ Applications</span>
-                    </button>
-                    <button class="primary_blue " >
-                        Developing Dynamic PHP Pages</span>
-                    </button>
-                    <button class="primary_blue " >
-                        Writing Python Scripts</span>
-                    </button>
-                </p>
-                <br>
-            </div>
-            <br><br>
-        </div>
-        <br><br><br><br>
-        <div class="page_container" id="portfolio">
-            <h2>My Portfolio</h2>
-            <p style="font-size: 24px;">
-                My fortfolio includes of all the projects I have worked on so far on my journey till date.
-            </p>
-            <div class="page_container">
-                
-                <div class="column large4 medium6 small12">
-                    <div class="overlay_container zi3 primary_green">
-                        <img class="overlay_content" src="./potfolio_img/tcd.png">
-                        <p class="overlay" style="font-size: 18px;">
-                                <br><br>
-                                The Code Drop is a YouTube channel dedicated to teaching all 
-                                the aspects of Web Development, and learn how to make beutiful 
-                                websites using HTML,CSS and JavaScript. Click 
-                                <a style="color: #FFF; font-size: 18px;" href="https://www.youtube.com/channel/UCnEIkvnbpbQyetPk_K9QNQg?confirm_subscribe=1">
-                                    Here
-                                </a> to Subscribe to The Code Drop.
-                        </p>
-                    </div>
-                </div>
-                <div class="column large4 medium6 small12">
-                    <div class="overlay_container zi3 primary_inverted">
-                        <img class="overlay_content" src="./potfolio_img/fdfw.png">
-                        <p class="overlay" style="font-size: 18px;">
-                                <br><br><br>
-                                Think for a moment that, what would happen if you combine the Metro UI, 
-                                with Material Design, the result is Fluent Design also called Fabric UI.
-                                Click 
-                                <a style="color: #FFF; font-size: 18px;" href="https://shivendrasaurav.github.io/Fluent-Design-For-Web/index.html">
-                                    Here
-                                </a> to know more about Fluent Design.
-                        </p>
-                    </div>
-                </div>
-                <div class="column large4 medium6 small12">
-                    <div class="overlay_container zi3 primary_red">
-                        <img class="overlay_content" src="./potfolio_img/tedx.png">
-                        <p class="overlay" style="font-size: 18px;">
-                                <br><br>
-                                TEDxREVAUniversity is an independently organised TED event. 
-                                This event is an collective endeavour of students from different 
-                                schools of REVA University. Click
-                                <a style="color: #FFF; font-size: 18px;" href="http://tedxrevauniversity.com/home.html">
-                                    Here
-                                </a> to know more about TEDxREVAUniversity.
-                        </p>
-                    </div>
-                </div>
 
-                
+        <div class="sidepanel_container primary_green" id="sidenav">
+            <div class="sidepanel_content zi3 right">
                 <br><br>
-
-                
-                <div class="column large4 medium6 small12">
-                    <div class="overlay_container zi3 primary_blue">
-                        <img class="overlay_content" src="./potfolio_img/dscreva.png">
-                        <p class="overlay" style="font-size: 18px;">
-                                <br><br>
-                                DSCREVA is a Club recognized 
-                                by both Gooogle Developers and REVA University. At DSC REVA 
-                                we aim to bring the latest tech possible to you and help 
-                                you to learn them. Click
-                                <a style="color: #FFF; font-size: 18px;" href="https://dscreva.github.io/">
-                                    Here
-                                </a> to know more about DSCREVA.
-                        </p>
-                    </div>
+                <button class="primary_red right ta_center" onclick="hidesiednav();" style="padding: 10px; padding-left: 20px; padding-right: 20px;">X</button><br><br><br><br>
+                <div class="page_container">
+                    <a href="#home" style="font-size: 28px;" onclick="hidesiednav();"><div class="panel_item">I am</div></a>
+                    <a href="#about" style="font-size: 28px;" onclick="hidesiednav();"><div class="panel_item">About Me</div></a>
+                    <a href="#skills" style="font-size: 28px;" onclick="hidesiednav();"><div class="panel_item">What I Do</div></a>
+                    <a href="#portfolio" style="font-size: 28px;" onclick="hidesiednav();"><div class="panel_item">Portfolio</div></a>
+                    <a href="#contact" style="font-size: 28px;" onclick="hidesiednav();"><div class="panel_item">Contact</div></a>
                 </div>
-                <div class="column large4 medium6 small12">
-                    <div class="overlay_container zi3 primary_white">
-                        <img class="overlay_content" src="./potfolio_img/calc.png">
-                        <p class="overlay" style="font-size: 18px;">
-                                <br><br>
-                                This is a basic calculator made with Fluent Design For Web. 
-                                At core it is a written in JavaScript but it can be installed 
-                                in any device and work offline. It also supports both touch and 
-                                keyboard inputs. Click
-                                <a style="color: #FFF; font-size: 18px;" href="http://tedxrevauniversity.com/home.html">
-                                    Here
-                                </a> to use the Calculator.
-                        </p>
-                    </div>
-                </div>
-                <div class="column large4 medium6 small12">
-                    <div class="overlay_container zi3 primary_yellow">
-                        <img class="overlay_content" src="./potfolio_img/ttt.png">
-                        <p class="overlay" style="font-size: 18px;">
-                                <br><br>
-                                This is a Tic Tac Toe game which has been made using plain 
-                                HTML, CSS and JavaScript. Players can enter their names 
-                                in there too and the score between two players is stored till 
-                                page refreshes. Click
-                                <a style="color: #FFF; font-size: 18px;" href="https://shivendrasaurav.github.io/Fluent-Design-For-Web/index.html">
-                                    Here
-                                </a> to play Tic Tac Toe.
-                        </p>
-                    </div>
-                </div>
-
-
-
-            </div>
+            </div>        
         </div>
-        <br><br><br><br>
+
+        <div id="content">
+            <div class="page_container fsbg parrallax" id="home">
+                <div class="iam">
+                    <h1 class="anim1">I am,</h1>
+                    <h3 class="anim2">Shivendra Saurav</h3>
+                    <h5 class="anim3">UI/UX Developer</h5>
+                </div>
+            </div>
+            <div id="about" class="page_container" style="padding: 16px;" >
+                <br><br><br><br>
+                <h2>About Me</h2>
+                <p style="font-size: 24px;">
+                    I am currently pusruing B.Tech in CSE from REVA University. 
+                    I have the ability to solve any programming or design problem 
+                    based on the criteria provided. Maybe you want a music app, 
+                    maybe you want a web page for your brand, or maybe you want 
+                    to make Conway's Game Of Life, I can do all that and much more 
+                </p>
+                <br><br><br><br><br><br>
+            </div>
+            <div id="skills" class="page_container primary_white zi2">
+                <br><br>
+                <div style="padding: 16px;" class="column large6 medium6 small12">
+                    <h2>What I Do</h2>
+                    <p style="font-size: 24px;">
+                        I can perform a wide array of tasks ranging from designing
+                        and developing beutiful webpages just like this one or based on 
+                        given requirements. I also know different programming languages 
+                        which help me to participate in most of the projects I am part of. 
+                        I also possess fundamental knowledge of algorithms and mathematics 
+                        which helps me to solve almost any problem I face.
+                    </p>
+                </div>
+                <div style="padding: 16px;" class="column large6 medium6 small12">
+                    <h2>My Inventory Includes Of</h2>
+                    <p style="text-align: left;">
+                        <button class="primary_blue " >
+                            UI/UX Development</span>
+                        </button>                    
+                        <button class="primary_blue " >
+                            Front End Web Development</span>
+                        </button>                    
+                        <button class="primary_blue " >
+                            Algorithms Development</span>
+                        </button>                    
+                        <button class="primary_blue " >
+                            Using Data Structures</span>
+                        </button>                    
+                        <button class="primary_blue " >
+                            Handling Arrays and Pointers</span>
+                        </button>                    
+                        <button class="primary_blue " >
+                            Writing Webpages In HTML/CSS</span>
+                        </button>
+                        <button class="primary_blue " >
+                            Developing JavaScript Components</span>
+                        </button>
+                        <button class="primary_blue " >
+                            Writing C/C++ Applications</span>
+                        </button>
+                        <button class="primary_blue " >
+                            Developing Dynamic PHP Pages</span>
+                        </button>
+                        <button class="primary_blue " >
+                            Writing Python Scripts</span>
+                        </button>
+                    </p>
+                    <br>
+                </div>
+                <br><br>
+            </div>
+            <br><br><br><br>
+            <div class="page_container" id="portfolio">
+                <h2>My Portfolio</h2>
+                <p style="font-size: 24px;">
+                    My fortfolio includes of all the projects I have worked on so far on my journey till date. 
+                    And these are the most prominent ones that I've worked on since starting my graduation.
+                </p>
+                <div class="page_container">
+                    
+                    <div class="column large4 medium6 small12">
+                        <div class="overlay_container zi3 primary_green center">
+                            <img class="overlay_content" src="./potfolio_img/tcd.png">
+                            <p class="overlay" style="font-size: 18px;">
+                                    <br>
+                                    The Code Drop is a YouTube channel dedicated to teaching all 
+                                    the aspects of Web Development, and learn how to make beutiful 
+                                    websites using HTML,CSS and JavaScript. Click 
+                                    <a style="color: #FFF; font-size: 18px;" href="https://www.youtube.com/channel/UCnEIkvnbpbQyetPk_K9QNQg?confirm_subscribe=1">
+                                        Here
+                                    </a> to Subscribe to The Code Drop.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column large4 medium6 small12">
+                        <div class="overlay_container zi3 primary_inverted center">
+                            <img class="overlay_content" src="./potfolio_img/fdfw.png">
+                            <p class="overlay" style="font-size: 18px;">
+                                    <br>
+                                    Think for a moment that, what would happen if you combine the Metro UI, 
+                                    with Material Design, the result is Fluent Design also called Fabric UI.
+                                    Click 
+                                    <a style="color: #FFF; font-size: 18px;" href="https://shivendrasaurav.github.io/Fluent-Design-For-Web/index.html">
+                                        Here
+                                    </a> to know more about Fluent Design.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column large4 medium6 small12">
+                        <div class="overlay_container zi3 primary_red center">
+                            <img class="overlay_content" src="./potfolio_img/tedx.png">
+                            <p class="overlay" style="font-size: 18px;">
+                                    <br>
+                                    TEDxREVAUniversity is an independently organised TED event. 
+                                    This event is an collective endeavour of students from different 
+                                    schools of REVA University. Click
+                                    <a style="color: #FFF; font-size: 18px;" href="http://tedxrevauniversity.com/home.html">
+                                        Here
+                                    </a> to know more about TEDxREVAUniversity.
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                    <br><br>
+
+                    
+                    <div class="column large4 medium6 small12">
+                        <div class="overlay_container zi3 primary_blue center">
+                            <img class="overlay_content" src="./potfolio_img/dscreva.png">
+                            <p class="overlay" style="font-size: 18px;">
+                                    <br>
+                                    DSCREVA is a Club recognized 
+                                    by both Gooogle Developers and REVA University. At DSC REVA 
+                                    we aim to bring the latest tech possible to you and help 
+                                    you to learn them. Click
+                                    <a style="color: #FFF; font-size: 18px;" href="https://dscreva.github.io/">
+                                        Here
+                                    </a> to know more about DSCREVA.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column large4 medium6 small12">
+                        <div class="overlay_container zi3 primary_white center">
+                            <img class="overlay_content" src="./potfolio_img/calc.png">
+                            <p class="overlay" style="font-size: 18px;">
+                                    <br>
+                                    This is a basic calculator made with Fluent Design For Web. 
+                                    At core it is a written in JavaScript but it can be installed 
+                                    in any device and work offline. It also supports both touch and 
+                                    keyboard inputs. Click
+                                    <a style="color: #FFF; font-size: 18px;" href="https://shivendrasaurav.github.io/jsapp.calculator/">
+                                        Here
+                                    </a> to use the Calculator.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column large4 medium6 small12">
+                        <div class="overlay_container zi3 primary_yellow center">
+                            <img class="overlay_content" src="./potfolio_img/ttt.png">
+                            <p class="overlay" style="font-size: 18px;">
+                                    <br>
+                                    This is a Tic Tac Toe game which has been made using plain 
+                                    HTML, CSS and JavaScript. Players can enter their names 
+                                    in there too and the score between two players is stored till 
+                                    page refreshes. Click
+                                    <a style="color: #FFF; font-size: 18px;" href="https://shivendrasaurav.github.io/Tic-Tac-Toe/">
+                                        Here
+                                    </a> to play Tic Tac Toe.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            
+            <br><br><br><br>
+
+            <div class="primary_green" style="width: 100%;" id="contact">
+                <br><br>
+                <h2>You Can Get In Touch With Me By</h2>
+                <div class="column large6 medium6 small12">
+                    <div style="color: #FFF;" class="tooltip_container">
+                        <h4>Mailing Me</h4>
+                        <span class="tooltip_info">shivendrasaurav@gmail.com</span>
+                    </div>
+                    <div style="color: #FFF;" class="tooltip_container">
+                        <h4>Contacting Me</h4>
+                        <span class="tooltip_info">+917348830375 / +917717726255</span>
+                    </div>
+                    
+                </div>
+                <div class="column large6 medium6 small12">
+                    <h4>Following me on these platorms</h4>
+                    <a href="https://www.youtube.com/channel/UCnEIkvnbpbQyetPk_K9QNQg?confirm_subscribe=1"><img src="./portfolio_follow/youtube.png" class="icon"></a>&nbsp;&nbsp;
+                    <a href="https://github.com/shivendrasaurav"><img src="./portfolio_follow/github.png" class="icon"></a>&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/shivendrasaurav/"><img src="./portfolio_follow/instagram.png" class="icon"></a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/shivendra-saurav-80a8ba191/"><img src="./portfolio_follow/linkedin.png" class="icon"></a>&nbsp;&nbsp;
+                    <a href="https://www.facebook.com/shivendra.saurav"><img src="./portfolio_follow/facebook.png" class="icon"></a>&nbsp;&nbsp;
+                </div>
+                <br><br><br><br>
+            </div>
+
+        </div>
     </body>
 </html>
