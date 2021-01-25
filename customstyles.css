@@ -132,3 +132,19 @@ button{
 .sidepanel_container{
     display: none;
 }
+
+.here{
+    font-size: 28px;
+    color: #fcfcfc;
+    background: #0e1e1e;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+.here::before{
+    display: none;
+}
+.paddalil{
+    margin-top: 160px;
+    box-shadow: 4px 4px 12px #acacacac;
+    padding: 40px;
+}
